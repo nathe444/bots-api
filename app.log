@@ -1,0 +1,19 @@
+2025-04-14 15:00:53,444 - main - ERROR - Database connection failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-04-14 15:00:57,459 - main - ERROR - Database connection failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-04-14 15:01:33,947 - main - ERROR - Database connection failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-04-14 15:01:46,358 - main - INFO - Database connection successful!
+2025-04-14 15:01:49,403 - main - INFO - Tables in database: []
+2025-04-14 15:03:08,477 - main - INFO - Database connection successful!
+2025-04-14 15:03:09,382 - main - INFO - Tables in database: []
+2025-04-14 15:07:57,609 - main - INFO - All databases: ['_aiven', 'defaultdb', 'pagila', 'pg-cm-qa-db1']
+2025-04-14 15:09:33,807 - main - INFO - All databases: ['_aiven', 'defaultdb', 'pagila', 'pg-cm-qa-db1']
+2025-04-14 15:10:01,469 - main - INFO - All databases: ['_aiven', 'defaultdb', 'pagila', 'pg-cm-qa-db1']
+2025-04-14 15:10:18,760 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages']
+2025-04-14 15:14:55,430 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages']
+2025-04-14 15:27:19,294 - main - ERROR - Failed to create knowledge tables: Foreign key associated with column 'CustomKnowledge.bot_id' could not find table 'Bots' with which to generate a foreign key to target column 'id'
+2025-04-14 15:33:08,892 - main - ERROR - Failed to create knowledge tables: Foreign key associated with column 'CustomKnowledge.bot_id' could not find table 'Bots' with which to generate a foreign key to target column 'id'
+2025-04-14 15:33:34,073 - main - ERROR - Failed to create knowledge tables: Foreign key associated with column 'CustomKnowledge.bot_id' could not find table 'Bots' with which to generate a foreign key to target column 'BotID'
+2025-04-14 15:35:09,818 - main - ERROR - Failed to create knowledge tables: Foreign key associated with column 'CustomKnowledge.bot_id' could not find table 'Bots' with which to generate a foreign key to target column 'BotID'
+2025-04-14 15:40:18,893 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']
+2025-04-14 15:49:13,601 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']
+2025-04-14 16:06:36,346 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']

@@ -209,3 +209,42 @@ ImportError: Could not import tiktoken python package. This is needed in order t
 2025-04-14 20:41:43,041 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2025-04-14 20:41:43,978 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2025-04-14 20:41:46,367 - utils.embeddings - INFO - Embeddings generated for knowledge 9
+2025-04-14 20:53:25,846 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:53:27,806 - routers.chat - ERROR - Error generating AI response: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 113, in get_ai_response
+    response = openai.ChatCompletion.create(
+        model="gpt-4",  # or another appropriate model
+    ...<5 lines>...
+        max_tokens=500
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\openai\lib\_old_api.py", line 39, in __call__
+    raise APIRemovedInV1(symbol=self._symbol)
+openai.lib._old_api.APIRemovedInV1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-14 20:56:05,174 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:56:13,270 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 21:04:59,200 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 21:05:01,858 - utils.embeddings - INFO - Processed 1/2 chunks for knowledge 10
+2025-04-14 21:05:02,475 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 21:05:05,123 - utils.embeddings - INFO - Embeddings generated for knowledge 10
+2025-04-14 21:05:56,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 21:06:03,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 21:06:27,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 21:06:39,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

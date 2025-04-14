@@ -16,6 +16,7 @@ from models import Base
 
 # Import routers
 from routers.documents import router as documents_router
+from routers.chat import router as chat_router
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, 
@@ -30,6 +31,7 @@ app = FastAPI(title="Bot Training API")
 
 # Include routers
 app.include_router(documents_router)
+app.include_router(chat_router)
 
 if __name__ == "__main__":
     import uvicorn

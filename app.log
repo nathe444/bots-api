@@ -17,3 +17,195 @@
 2025-04-14 15:40:18,893 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']
 2025-04-14 15:49:13,601 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']
 2025-04-14 16:06:36,346 - main - INFO - Tables in pg-cm-qa-db1: ['AuditLogs', 'BotUsers', 'ChatSessions', 'ChatAppearances', 'Accounts', 'Users', 'Bots', 'FileUploads', 'Knowledge', 'Link', 'MediaPlayer', 'AccountUsers', 'QnAs', 'Tags', 'TagRels', 'InitialQuestions', 'Tickets', 'Messages', 'CustomKnowledge', 'KnowledgeVector']
+2025-04-14 16:25:06,961 - main - ERROR - Error uploading document: (psycopg2.errors.UndefinedColumn) column "meta_data" of relation "CustomKnowledge" does not exist
+LINE 1: ...dding_status, created_at, updated_at, created_by, meta_data)...
+                                                             ^
+
+[SQL: INSERT INTO public."CustomKnowledge" (bot_id, title, content, file_path, file_type, file_size, embedding_model, is_embedded, embedding_status, created_at, updated_at, created_by, meta_data) VALUES (%(bot_id)s, %(title)s, %(content)s, %(file_path)s, %(file_type)s, %(file_size)s, %(embedding_model)s, %(is_embedded)s, %(embedding_status)s, %(created_at)s, %(updated_at)s, %(created_by)s, %(meta_data)s) RETURNING public."CustomKnowledge".id]
+[parameters: {'bot_id': 23, 'title': 'banking', 'content': 'ABC Bank - Your Trusted Financial Partner\nSecure Your Future with ABC Bank\nFixed Deposits (FD)\nFeatures:\n- Guaranteed returns with attractive int ... (1356 characters truncated) ... 7 customer support\n- Hassle-free online banking\n- Special benefits for senior citizens\nVisit your nearest ABC Bank branch or apply online today!\n', 'file_path': 'C:\\Users\\hp\\OneDrive\\Desktop\\folders\\projects\\Upwork\\vijay\\bot\\uploads\\bf7f3295-3066-450e-9f90-798f972f5543.pdf', 'file_type': 'application/pdf', 'file_size': 2465, 'embedding_model': 'text-embedding-ada-002', 'is_embedded': False, 'embedding_status': 'pending', 'created_at': datetime.datetime(2025, 4, 14, 13, 25, 6, 116589), 'updated_at': datetime.datetime(2025, 4, 14, 13, 25, 6, 116596), 'created_by': 1, 'meta_data': None}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-14 16:29:58,500 - main - ERROR - Error uploading document: name 'created_by_int' is not defined
+2025-04-14 16:33:40,103 - main - ERROR - Error uploading document: name 'created_by_int' is not defined
+2025-04-14 16:39:35,917 - main - ERROR - Error processing embeddings for knowledge 2: 
+2025-04-14 20:10:24,857 - main - ERROR - Error processing embeddings for knowledge 3: 
+2025-04-14 20:13:33,684 - main - ERROR - Error uploading document: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: UPDATE statement on table 'CustomKnowledge' expected to update 1 row(s); 0 were matched. (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-04-14 20:19:18,739 - main - ERROR - Error processing chunk 0 for knowledge 4: Could not import tiktoken python package. This is needed in order to for OpenAIEmbeddings. Please install it with `pip install tiktoken`.
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 453, in _get_len_safe_embeddings
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\main.py", line 171, in process_embeddings
+    embedding_vector = embeddings.embed_query(chunk)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 700, in embed_query
+    return self.embed_documents([text])[0]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(texts, engine=engine)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 455, in _get_len_safe_embeddings
+    raise ImportError(
+    ...<3 lines>...
+    )
+ImportError: Could not import tiktoken python package. This is needed in order to for OpenAIEmbeddings. Please install it with `pip install tiktoken`.
+2025-04-14 20:19:18,748 - main - ERROR - Error processing chunk 1 for knowledge 4: Could not import tiktoken python package. This is needed in order to for OpenAIEmbeddings. Please install it with `pip install tiktoken`.
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 453, in _get_len_safe_embeddings
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\main.py", line 171, in process_embeddings
+    embedding_vector = embeddings.embed_query(chunk)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 700, in embed_query
+    return self.embed_documents([text])[0]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(texts, engine=engine)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 455, in _get_len_safe_embeddings
+    raise ImportError(
+    ...<3 lines>...
+    )
+ImportError: Could not import tiktoken python package. This is needed in order to for OpenAIEmbeddings. Please install it with `pip install tiktoken`.
+2025-04-14 20:19:19,985 - main - INFO - Embeddings generated for knowledge 4
+2025-04-14 20:21:31,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:21:32,767 - main - INFO - Processed 1/2 chunks for knowledge 5
+2025-04-14 20:21:34,539 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:21:36,652 - main - INFO - Embeddings generated for knowledge 5
+2025-04-14 20:24:36,200 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:37,119 - main - INFO - Processed 1/33 chunks for knowledge 6
+2025-04-14 20:24:38,456 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:39,474 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:40,093 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:41,642 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:42,214 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:43,406 - main - INFO - Processed 6/33 chunks for knowledge 6
+2025-04-14 20:24:44,668 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:45,214 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:47,069 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:47,563 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:49,100 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:50,008 - main - INFO - Processed 11/33 chunks for knowledge 6
+2025-04-14 20:24:51,219 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:51,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:52,146 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:54,940 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:55,369 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:56,470 - main - INFO - Processed 16/33 chunks for knowledge 6
+2025-04-14 20:24:58,121 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:24:58,969 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:05,790 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:07,328 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:08,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:09,009 - main - INFO - Processed 21/33 chunks for knowledge 6
+2025-04-14 20:25:09,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:10,091 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:10,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:11,335 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:11,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:12,911 - main - INFO - Processed 26/33 chunks for knowledge 6
+2025-04-14 20:25:13,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:14,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:14,736 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:15,258 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:15,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:16,774 - main - INFO - Processed 31/33 chunks for knowledge 6
+2025-04-14 20:25:17,934 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:18,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:25:20,726 - main - INFO - Embeddings generated for knowledge 6
+2025-04-14 20:27:43,599 - main - ERROR - Error uploading document: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(50)
+
+[SQL: INSERT INTO public."CustomKnowledge" (bot_id, title, content, file_path, file_type, file_size, embedding_model, is_embedded, embedding_status, created_at, updated_at, created_by, document_metadata) VALUES (%(bot_id)s, %(title)s, %(content)s, %(file_path)s, %(file_type)s, %(file_size)s, %(embedding_model)s, %(is_embedded)s, %(embedding_status)s, %(created_at)s, %(updated_at)s, %(created_by)s, %(document_metadata)s) RETURNING public."CustomKnowledge".id]
+[parameters: {'bot_id': 23, 'title': 'demo', 'content': "Job Title: Python API & PostgreSQL Developer for AI Chatbot with RAG & LLM Integration\nJob Description:\nWe are developing a SaaS-based AI chatbot e ... (6954 characters truncated) ... ore samples around the same functionality soon\nPhase 2: - Future\nN8n\nMake.com\nSocial Sites integrations - WhatsApp, Facebook, LinkedIn, Twiliio\n", 'file_path': 'C:\\Users\\hp\\OneDrive\\Desktop\\folders\\projects\\Upwork\\vijay\\bot\\uploads\\19ff0c41-f731-4c22-bee3-a80ef44ef922.docx', 'file_type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'file_size': 12396, 'embedding_model': 'text-embedding-ada-002', 'is_embedded': False, 'embedding_status': 'pending', 'created_at': datetime.datetime(2025, 4, 14, 17, 27, 42, 591390), 'updated_at': datetime.datetime(2025, 4, 14, 17, 27, 42, 591410), 'created_by': None, 'document_metadata': '{"original_filename": "Chatbot - V - Milestones.docx"}'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-04-14 20:29:13,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:14,768 - main - INFO - Processed 1/48 chunks for knowledge 7
+2025-04-14 20:29:15,981 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:17,224 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:17,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:18,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:18,890 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:20,170 - main - INFO - Processed 6/48 chunks for knowledge 7
+2025-04-14 20:29:21,580 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:22,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:23,209 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:23,772 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:24,453 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:25,407 - main - INFO - Processed 11/48 chunks for knowledge 7
+2025-04-14 20:29:26,459 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:27,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:28,346 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:28,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:29,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:30,331 - main - INFO - Processed 16/48 chunks for knowledge 7
+2025-04-14 20:29:30,875 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:31,329 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:32,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:33,644 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:34,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:35,590 - main - INFO - Processed 21/48 chunks for knowledge 7
+2025-04-14 20:29:36,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:36,497 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:37,015 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:37,458 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:38,998 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:40,017 - main - INFO - Processed 26/48 chunks for knowledge 7
+2025-04-14 20:29:40,533 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:41,107 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:41,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:42,539 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:43,127 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:44,046 - main - INFO - Processed 31/48 chunks for knowledge 7
+2025-04-14 20:29:44,742 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:45,368 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:45,869 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:46,334 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:46,820 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:47,808 - main - INFO - Processed 36/48 chunks for knowledge 7
+2025-04-14 20:29:48,376 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:48,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:49,489 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:50,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:50,654 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:51,660 - main - INFO - Processed 41/48 chunks for knowledge 7
+2025-04-14 20:29:52,488 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:53,056 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:53,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:54,137 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:54,751 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:56,012 - main - INFO - Processed 46/48 chunks for knowledge 7
+2025-04-14 20:29:56,710 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:57,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:29:59,994 - main - INFO - Embeddings generated for knowledge 7
+2025-04-14 20:31:23,212 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:24,551 - main - INFO - Processed 1/10 chunks for knowledge 8
+2025-04-14 20:31:25,009 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:25,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:25,947 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:27,333 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:27,848 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:29,688 - main - INFO - Processed 6/10 chunks for knowledge 8
+2025-04-14 20:31:30,908 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:32,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:33,575 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:34,507 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:31:37,166 - main - INFO - Embeddings generated for knowledge 8
+2025-04-14 20:41:31,297 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:32,694 - utils.embeddings - INFO - Processed 1/10 chunks for knowledge 9
+2025-04-14 20:41:33,691 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:34,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:35,650 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:36,826 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:38,176 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:39,895 - utils.embeddings - INFO - Processed 6/10 chunks for knowledge 9
+2025-04-14 20:41:40,521 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:41,970 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:43,041 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:43,978 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-14 20:41:46,367 - utils.embeddings - INFO - Embeddings generated for knowledge 9

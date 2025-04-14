@@ -3,3 +3,12 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 python-dotenv
+PyPDF2
+python-multipart
+python-docx
+numpy
+openai
+langchain
+langchain-community
+tiktoken
+langchain-openai

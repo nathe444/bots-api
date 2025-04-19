@@ -248,3 +248,1261 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2025-04-14 21:06:03,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-14 21:06:27,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2025-04-14 21:06:39,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 18:57:08,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 18:57:11,618 - utils.embeddings - INFO - Processed 1/2 chunks for knowledge 11
+2025-04-16 18:57:13,271 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 18:57:19,894 - utils.embeddings - INFO - Embeddings generated for knowledge 11
+2025-04-16 19:05:39,775 - openai._base_client - INFO - Retrying request to /embeddings in 0.394249 seconds
+2025-04-16 19:05:41,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 19:05:45,608 - utils.embeddings - INFO - Processed 1/2 chunks for knowledge 12
+2025-04-16 19:05:47,406 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 19:05:55,168 - utils.embeddings - INFO - Embeddings generated for knowledge 12
+2025-04-16 19:07:07,900 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 19:07:21,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 19:07:47,230 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-16 19:07:58,680 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:07:56,779 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:07:58,086 - utils.embeddings - INFO - Processed 1/3 chunks for knowledge 13
+2025-04-17 15:07:58,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:07:59,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:08:01,941 - utils.embeddings - INFO - Embeddings generated for knowledge 13
+2025-04-17 15:10:43,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:10:47,768 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:10:54,390 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:10:59,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:14:20,661 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:14:24,743 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:14:28,776 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:14:32,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:18:50,286 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:18:55,615 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:19:05,951 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:19:09,746 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:20:50,827 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:20:58,309 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:21:07,036 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:21:11,179 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:28:42,858 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:28:52,388 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:29:34,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:29:40,123 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:34:29,538 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:34:32,850 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:34:40,694 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:34:46,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:35:35,067 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:35:42,902 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-17 15:36:24,535 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-17 15:36:29,935 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 10:54:21,016 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 10:55:27,105 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 10:59:05,740 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 10:59:05,745 - routers.chat - ERROR - Error using Zapier tools: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 10:59:05,746 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 10:59:11,438 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 10:59:22,552 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:02:55,452 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 11:02:55,455 - routers.chat - ERROR - Error using Zapier tools: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 11:02:55,456 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 11:03:00,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:03:10,473 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:03:25,054 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:06:41,979 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:06:42,956 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:06:42,957 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email
+2025-04-19 11:06:42,959 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar
+2025-04-19 11:06:42,959 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting
+2025-04-19 11:06:42,960 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:06:42,961 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd?'
+2025-04-19 11:06:42,963 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:06:42,964 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:06:42,966 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd?'? True
+2025-04-19 11:06:42,967 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:06:42,968 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd?'
+2025-04-19 11:06:46,589 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 11:06:46,595 - routers.chat - ERROR - Error using Zapier tools: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 11:06:46,596 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 11:06:51,655 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:07:02,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:11:03,743 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:11:04,906 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:11:04,908 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:11:04,909 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:11:04,910 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:11:04,911 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:11:04,912 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd?'
+2025-04-19 11:11:04,915 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:11:04,916 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:11:04,917 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd?'? True
+2025-04-19 11:11:04,918 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:11:04,919 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd?'
+2025-04-19 11:11:09,821 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:11:15,344 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:11:15,355 - routers.chat - INFO - Zapier response: I have sent an email summarizing about the FD as per your request.
+2025-04-19 11:16:03,966 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd?'
+2025-04-19 11:16:03,968 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:16:03,969 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:16:03,969 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd?'? True
+2025-04-19 11:16:03,970 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:16:03,970 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd?'
+2025-04-19 11:16:06,768 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:16:12,099 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:16:12,103 - routers.chat - INFO - Zapier response: I have sent an email summarizing the fixed deposit (FD).
+2025-04-19 11:16:38,370 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:16:39,345 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:16:39,346 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:16:39,350 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:16:39,351 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:16:39,352 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:16:46,106 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd?'
+2025-04-19 11:16:46,107 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:16:46,108 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:16:46,108 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd?'? True
+2025-04-19 11:16:46,109 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:16:46,109 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd?'
+2025-04-19 11:16:54,668 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:16:54,705 - routers.chat - INFO - Zapier response: In this case, the user wants to send an email summarizing about the 'fd'. However, the recipient's email address, the subject line, and the content of the email are not provided. Therefore, I need to ask the user for these details before I can execute the email sending action using the Gmail_Send_Email function. 
+
+Let's proceed:
+
+1. Can you please provide the recipient's email address?
+2. What would you like the subject line to be?
+3. Can you please provide the content to be included in the email?
+2025-04-19 11:17:28,911 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com?'
+2025-04-19 11:17:28,912 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:17:28,912 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:17:28,913 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com?'? True
+2025-04-19 11:17:28,913 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:17:28,914 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com?'
+2025-04-19 11:17:38,129 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:17:38,137 - routers.chat - INFO - Zapier response: The user has provided all the necessary information to send an email. The recipient's email address is natnaelmulugeta1738@gmail.com. The subject of the email is not explicitly stated, but it can be inferred as "Summary about the FD". The content of the email is also not explicitly stated, but it can be inferred that it should be a summary about the FD. 
+
+Therefore, we can proceed with the Zapier automation to send an email using the Gmail_Send_Email function. 
+
+Here is the function call:
+
+```
+functions.Gmail_Send_Email({
+  __arg1: {
+    "to": "natnaelmulugeta1738@gmail.com",
+    "subject": "Summary about the FD",
+    "body": "Here is the summary about the FD..."
+  }
+})
+```
+
+Please note that the actual content of the email ("Here is the summary about the FD...") should be replaced with the actual summary.
+2025-04-19 11:21:34,423 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:21:35,609 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:21:35,610 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:21:35,611 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:21:35,612 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:21:35,613 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:21:35,614 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd?'
+2025-04-19 11:21:35,615 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:21:35,616 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:21:35,616 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd?'? True
+2025-04-19 11:21:35,617 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:21:35,619 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd?'
+2025-04-19 11:21:41,568 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:21:41,602 - routers.chat - INFO - Zapier response: Sure, I can help with that. Could you please provide me with the recipient's email address, the subject line for the email, and the content you would like to include in the email about the FD?
+2025-04-19 11:22:10,890 - routers.chat - INFO - Checking if should use Zapier for: 'the email is natnaelmulugeta1738@gmail.com?'
+2025-04-19 11:22:10,891 - routers.chat - INFO - Should use Zapier for 'the email is natnaelmulugeta1738@gmail.com?'? False
+2025-04-19 11:22:10,892 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:22:16,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:22:18,668 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:24:02,861 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com'
+2025-04-19 11:24:02,862 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:24:02,863 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:24:02,864 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com'? True
+2025-04-19 11:24:02,865 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:24:02,866 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the fd to natnaelmulugeta1738@gmail.com'
+2025-04-19 11:24:05,659 - routers.chat - INFO - Directly calling email tool with recipient: natnaelmulugeta1738@gmail.com
+2025-04-19 11:24:28,725 - routers.chat - ERROR - Error sending email directly: 400 Client Error: Bad Request for url: https://nla.zapier.com/api/v1/exposed/7bafd607-8de7-489d-8e8c-1247d28fbb86/execute/
+2025-04-19 11:24:28,727 - routers.chat - ERROR - Error using Zapier tools: Failed to send email: 400 Client Error: Bad Request for url: https://nla.zapier.com/api/v1/exposed/7bafd607-8de7-489d-8e8c-1247d28fbb86/execute/
+2025-04-19 11:24:28,728 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Failed to send email: 400 Client Error: Bad Request for url: https://nla.zapier.com/api/v1/exposed/7bafd607-8de7-489d-8e8c-1247d28fbb86/execute/
+2025-04-19 11:24:33,735 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:24:44,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:31:17,144 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:31:19,475 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:31:19,476 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:31:19,477 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:31:19,479 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:31:19,480 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:31:19,481 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the document to natnaelmulugeta1738@gmail.com'
+2025-04-19 11:31:19,482 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:31:19,483 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:31:19,484 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the document to natnaelmulugeta1738@gmail.com'? True
+2025-04-19 11:31:19,484 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:31:19,485 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the document to natnaelmulugeta1738@gmail.com'
+2025-04-19 11:31:19,486 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 11:31:19,487 - routers.chat - INFO - Found email tool: Gmail_Send_Email
+2025-04-19 11:31:19,488 - routers.chat - INFO - Directly calling email tool with recipient: natnaelmulugeta1738@gmail.com
+2025-04-19 11:31:19,489 - routers.chat - INFO - Email query format 1: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:31:19,490 - routers.chat - INFO - Running Zapier action 7bafd607-8de7-489d-8e8c-1247d28fbb86 with query: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:31:33,417 - routers.chat - INFO - Zapier action result: {'id': '1964d2c9bc6034b0', 'threadId': '1964d2c9bc6034b0', 'labelIds': ['SENT']}
+2025-04-19 11:31:33,418 - routers.chat - INFO - Email result: {'id': '1964d2c9bc6034b0', 'threadId': '1964d2c9bc6034b0', 'labelIds': ['SENT']}
+2025-04-19 11:31:33,418 - routers.chat - INFO - Zapier response: I've sent an email to natnaelmulugeta1738@gmail.com with a summary of the Fixed Deposit information.
+2025-04-19 11:32:05,463 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email summerizing about the document '
+2025-04-19 11:32:05,465 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 11:32:05,466 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 11:32:05,468 - routers.chat - INFO - Should use Zapier for 'can you send an email summerizing about the document '? True
+2025-04-19 11:32:05,470 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:32:05,473 - routers.chat - INFO - Processing with Zapier: 'can you send an email summerizing about the document '
+2025-04-19 11:32:05,477 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 11:32:05,479 - routers.chat - INFO - Found email tool: Gmail_Send_Email
+2025-04-19 11:32:12,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:32:12,047 - routers.chat - INFO - Zapier response: Sure, I can help with that. Could you please provide me with the following details?
+
+1. The recipient's email address
+2. The subject of the email
+3. The content to be included in the email, specifically the key points to summarize from the document.
+2025-04-19 11:32:55,771 - routers.chat - INFO - Checking if should use Zapier for: 'send the email to natnaelmulugeta1738@gmail.com. the content is about the rates '
+2025-04-19 11:32:55,772 - routers.chat - INFO - Email pattern match: 'email to'
+2025-04-19 11:32:55,773 - routers.chat - INFO - Should use Zapier for 'send the email to natnaelmulugeta1738@gmail.com. The content is about the rates '? True
+2025-04-19 11:32:55,774 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:32:55,774 - routers.chat - INFO - Processing with Zapier: 'send the email to natnaelmulugeta1738@gmail.com. The content is about the rates '
+2025-04-19 11:32:55,775 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 11:32:55,776 - routers.chat - INFO - Found email tool: Gmail_Send_Email
+2025-04-19 11:32:55,777 - routers.chat - INFO - Directly calling email tool with recipient: natnaelmulugeta1738@gmail.com
+2025-04-19 11:32:55,779 - routers.chat - INFO - Email query format 1: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:32:55,781 - routers.chat - INFO - Running Zapier action 7bafd607-8de7-489d-8e8c-1247d28fbb86 with query: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:33:13,041 - routers.chat - INFO - Zapier action result: {'id': '1964d2e1a17c34ce', 'threadId': '1964d2e1a17c34ce', 'labelIds': ['SENT']}
+2025-04-19 11:33:13,042 - routers.chat - INFO - Email result: {'id': '1964d2e1a17c34ce', 'threadId': '1964d2e1a17c34ce', 'labelIds': ['SENT']}
+2025-04-19 11:33:13,043 - routers.chat - INFO - Zapier response: I've sent an email to natnaelmulugeta1738@gmail.com with a summary of the Fixed Deposit information.
+2025-04-19 11:39:47,895 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 11:39:47,909 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? False
+2025-04-19 11:39:47,920 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:39:54,381 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:39:58,970 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:45:51,191 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:45:53,357 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:45:53,358 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:45:53,359 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:45:53,360 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:45:53,361 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:46:07,300 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 11:46:07,301 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? False
+2025-04-19 11:46:07,303 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:46:12,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:46:18,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:50:35,756 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 11:50:35,759 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? False
+2025-04-19 11:50:35,759 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:50:41,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 11:50:45,219 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 11:51:54,927 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:51:56,045 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:51:56,046 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:51:56,047 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:51:56,047 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:51:56,048 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:51:56,048 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 11:51:56,049 - routers.chat - INFO - Calendar pattern match: 'book me an appointment'
+2025-04-19 11:51:56,049 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? True
+2025-04-19 11:51:56,050 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:51:56,050 - routers.chat - INFO - Processing with Zapier: 'can you book me an appointment on Pediatric Cardiology'
+2025-04-19 11:51:56,050 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 11:51:56,050 - routers.chat - INFO - Checking tool: Google_Calendar_Create_Calendar
+2025-04-19 11:51:56,051 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 11:51:56,053 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment'
+2025-04-19 11:51:56,053 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment'
+2025-04-19 11:52:16,187 - routers.chat - INFO - Zapier action result: {'kind': 'calendar#calendar', 'etag': '"1YxBjp7N0IwFmZBHWoI2HfkqGlE"', 'id': '3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com', 'summary': 'Pediatric Appointment', 'timeZone': 'UTC', 'conferenceProperties__allowedConferenceSolutionTypes': ['hangoutsMeet'], 'url': 'https://calendar.google.com/calendar/r?cid=3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com', 'public_url': 'https://calendar.google.com/calendar/embed?src=3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com'}
+2025-04-19 11:52:16,188 - routers.chat - INFO - Calendar result: {'kind': 'calendar#calendar', 'etag': '"1YxBjp7N0IwFmZBHWoI2HfkqGlE"', 'id': '3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com', 'summary': 'Pediatric Appointment', 'timeZone': 'UTC', 'conferenceProperties__allowedConferenceSolutionTypes': ['hangoutsMeet'], 'url': 'https://calendar.google.com/calendar/r?cid=3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com', 'public_url': 'https://calendar.google.com/calendar/embed?src=3f9d225f85d888bd3adc4e03973eaa177d58a943d15e1a6343087cf1bbda859a@group.calendar.google.com'}
+2025-04-19 11:52:16,188 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am.
+2025-04-19 11:57:56,001 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 11:57:56,921 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 11:57:56,922 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 11:57:56,923 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 11:57:56,924 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 11:57:56,925 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 11:57:56,926 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 11:57:56,927 - routers.chat - INFO - Calendar pattern match: 'book me an appointment'
+2025-04-19 11:57:56,928 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? True
+2025-04-19 11:57:56,931 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:57:56,932 - routers.chat - INFO - Processing with Zapier: 'can you book me an appointment on Pediatric Cardiology'
+2025-04-19 11:57:56,934 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 11:58:29,720 - routers.chat - INFO - Checking if should use Zapier for: ' my email address is natnaelmulugeta1738@gmail.com'
+2025-04-19 11:58:29,721 - routers.chat - INFO - Should use Zapier for ' my email address is natnaelmulugeta1738@gmail.com'? True
+2025-04-19 11:58:29,722 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 11:58:29,723 - routers.chat - INFO - Processing with Zapier: ' my email address is natnaelmulugeta1738@gmail.com'
+2025-04-19 11:58:29,724 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 11:58:29,725 - routers.chat - INFO - Found email tool: Gmail_Send_Email
+2025-04-19 11:58:29,725 - routers.chat - INFO - Directly calling email tool with recipient: natnaelmulugeta1738@gmail.com
+2025-04-19 11:58:29,726 - routers.chat - INFO - Email query format 1: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:58:29,727 - routers.chat - INFO - Running Zapier action 7bafd607-8de7-489d-8e8c-1247d28fbb86 with query: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 11:58:49,143 - routers.chat - INFO - Zapier action result: {'id': '1964d458d2924051', 'threadId': '1964d458d2924051', 'labelIds': ['SENT']}
+2025-04-19 11:58:49,144 - routers.chat - INFO - Email result: {'id': '1964d458d2924051', 'threadId': '1964d458d2924051', 'labelIds': ['SENT']}
+2025-04-19 11:58:49,144 - routers.chat - INFO - Zapier response: I've sent an email to natnaelmulugeta1738@gmail.com with a summary of the Fixed Deposit information.
+2025-04-19 12:03:22,385 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:03:23,703 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:03:23,704 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:03:23,707 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:03:23,708 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:03:23,709 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:03:23,710 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an appointment on pediatric cardiology'
+2025-04-19 12:03:23,710 - routers.chat - INFO - Calendar pattern match: 'book me an appointment'
+2025-04-19 12:03:23,711 - routers.chat - INFO - Should use Zapier for 'can you book me an appointment on Pediatric Cardiology'? True
+2025-04-19 12:03:23,713 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:03:23,714 - routers.chat - INFO - Processing with Zapier: 'can you book me an appointment on Pediatric Cardiology'
+2025-04-19 12:03:23,715 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:03:50,012 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:03:51,149 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:03:51,151 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:03:51,152 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:03:51,153 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:03:51,153 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:03:51,154 - routers.chat - INFO - Checking if should use Zapier for: 'the email is natnaelmulugeta1738@gmail.com'
+2025-04-19 12:03:51,155 - routers.chat - INFO - Should use Zapier for 'the email is natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:03:51,155 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:03:51,157 - routers.chat - INFO - Processing with Zapier: 'the email is natnaelmulugeta1738@gmail.com'
+2025-04-19 12:03:51,158 - routers.chat - INFO - Checking tool: Gmail_Send_Email
+2025-04-19 12:03:51,159 - routers.chat - INFO - Found email tool: Gmail_Send_Email
+2025-04-19 12:03:51,160 - routers.chat - INFO - Directly calling email tool with recipient: natnaelmulugeta1738@gmail.com
+2025-04-19 12:03:51,161 - routers.chat - INFO - Email query format 1: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 12:03:51,163 - routers.chat - INFO - Running Zapier action 7bafd607-8de7-489d-8e8c-1247d28fbb86 with query: Send an email to natnaelmulugeta1738@gmail.com with subject 'Summary of Fixed Deposit (FD) Information' and body '
+Dear Customer,
+
+Here is a summary of our Fixed Deposit (FD) scheme:
+
+Fixed Deposit (FD) scheme offers guaranteed returns with attractive interest rates. Features include flexible tenure options from 7 days to 10 years, special benefits for senior citizens, and an auto-renewal facility. Interest rates: 7 days to 6 months: 5.00% p.a., 6 months to 1 year: 6.25% p.a., 1 year to 5 years: 7.00% p.a., 5 years to 10 years: 7.50% p.a.
+
+Please let us know if you need any further information.
+
+Best regards,
+AI Assistant
+'
+2025-04-19 12:04:06,088 - routers.chat - INFO - Zapier action result: {'id': '1964d4a660044858', 'threadId': '1964d4a660044858', 'labelIds': ['SENT']}
+2025-04-19 12:04:06,089 - routers.chat - INFO - Email result: {'id': '1964d4a660044858', 'threadId': '1964d4a660044858', 'labelIds': ['SENT']}
+2025-04-19 12:04:06,089 - routers.chat - INFO - Zapier response: I've sent an email to natnaelmulugeta1738@gmail.com with a summary of the Fixed Deposit information.
+2025-04-19 12:05:30,287 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:05:31,295 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:05:31,296 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:05:31,299 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:05:31,300 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:05:31,301 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:05:31,302 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:05:31,304 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? False
+2025-04-19 12:05:31,305 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:05:36,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 12:05:42,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 12:09:46,032 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:09:47,818 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:09:47,819 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:09:47,820 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:09:47,821 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:09:47,822 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:09:55,393 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:09:55,394 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:09:55,396 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:09:55,397 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:09:55,399 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:09:55,400 - routers.chat - INFO - Conversation history: [{'role': 'user', 'content': ''}]
+2025-04-19 12:09:55,402 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:09:55,403 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:10:17,299 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:10:17,300 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:10:17,301 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:10:17,302 - routers.chat - INFO - Conversation history: [{'role': 'user', 'content': ''}]
+2025-04-19 12:10:17,303 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:10:23,132 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 12:10:23,144 - routers.chat - INFO - Zapier response: Based on the provided request, it seems like an email address has been provided but there's no clear action to be taken. Could you please specify what you would like me to do with this email address? Would you like to send an email or create a calendar event?
+2025-04-19 12:14:37,318 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:14:38,554 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:14:38,555 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:14:38,556 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:14:38,557 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:14:38,558 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:14:52,490 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:14:52,491 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:14:52,492 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:14:52,493 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:14:52,494 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:14:52,494 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:14:52,496 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:14:52,496 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:14:52,498 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:14:52,499 - routers.chat - INFO - Processing with conversation history: []
+2025-04-19 12:14:52,499 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:14:52,500 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:15:03,935 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:15:03,936 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:15:03,937 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:15:03,938 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:15:03,939 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:15:03,940 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:15:03,941 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:15:03,942 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:15:03,943 - routers.chat - INFO - Processing with conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:15:03,944 - routers.chat - INFO - Found previous message asking for email
+2025-04-19 12:15:03,945 - routers.chat - INFO - Previous request was for calendar/appointment
+2025-04-19 12:15:03,945 - routers.chat - INFO - Detected follow-up with email: natnaelmulugeta1738@gmail.com, previous_request_type: calendar
+2025-04-19 12:15:03,946 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 12:15:03,946 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:15:03,947 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:15:15,199 - routers.chat - INFO - Zapier action result: None
+2025-04-19 12:15:15,199 - routers.chat - INFO - Calendar result: None
+2025-04-19 12:15:15,200 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com.
+2025-04-19 12:15:15,201 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'natnaelmulugeta1738@gmail.com'}, {'role': 'assistant', 'content': "I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com."}]
+2025-04-19 12:23:23,836 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:23:23,837 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:23:23,838 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:23:23,843 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:23:24,726 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:23:24,727 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:23:24,727 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:23:24,729 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:23:24,730 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:23:24,731 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:23:24,732 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:23:24,732 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:23:24,733 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:23:24,734 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:23:24,735 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:23:24,736 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:23:24,737 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:23:32,725 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:23:32,726 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:23:32,726 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:23:32,726 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:23:32,727 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:23:32,727 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:23:32,728 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:23:32,729 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:23:32,730 - routers.chat - INFO - Detected follow-up with email: natnaelmulugeta1738@gmail.com
+2025-04-19 12:23:32,731 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 12:23:32,732 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:23:32,732 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:23:36,235 - routers.chat - INFO - Zapier action result: None
+2025-04-19 12:23:36,236 - routers.chat - INFO - Calendar result: None
+2025-04-19 12:23:36,237 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com.
+2025-04-19 12:23:36,238 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'natnaelmulugeta1738@gmail.com'}, {'role': 'assistant', 'content': "I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com."}]
+2025-04-19 12:32:04,100 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:32:04,100 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:32:04,101 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:32:04,101 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:32:05,369 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:32:05,370 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:32:05,371 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:32:05,372 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:32:05,373 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:32:05,374 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:32:05,375 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:32:05,375 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:32:05,376 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:32:05,377 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:32:05,378 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:32:05,379 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:32:05,380 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:32:15,460 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:32:15,461 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:32:15,462 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:32:15,462 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:32:15,463 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:32:15,464 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:32:15,465 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:32:15,465 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:32:15,466 - routers.chat - INFO - Detected follow-up with email: natnaelmulugeta1738@gmail.com
+2025-04-19 12:32:15,467 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 12:32:15,469 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:32:15,471 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:32:18,961 - routers.chat - INFO - Zapier action result: None
+2025-04-19 12:32:18,962 - routers.chat - INFO - Calendar result: None
+2025-04-19 12:32:18,963 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com.
+2025-04-19 12:32:18,964 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'natnaelmulugeta1738@gmail.com'}, {'role': 'assistant', 'content': "I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com."}]
+2025-04-19 12:38:49,802 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:38:50,681 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:38:50,681 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:38:50,682 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:38:50,682 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:38:50,682 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:39:18,200 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:39:18,201 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:39:18,201 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:39:18,201 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:39:18,202 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:39:18,202 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:39:18,202 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:39:18,202 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:39:18,203 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:39:18,203 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:39:18,203 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:22,544 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:39:22,545 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:22,545 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:22,545 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:39:22,545 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:39:22,546 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:39:22,546 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:39:22,546 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:39:22,546 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:39:22,547 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:39:22,547 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:39:22,547 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:28,446 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:39:28,446 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:28,447 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:39:28,447 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:39:28,447 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:39:28,447 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:39:28,448 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:39:28,448 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:39:28,448 - routers.chat - INFO - Detected follow-up with email: natnaelmulugeta1738@gmail.com
+2025-04-19 12:39:28,449 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 12:39:28,449 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:39:28,449 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:39:40,205 - routers.chat - INFO - Zapier action result: None
+2025-04-19 12:39:40,206 - routers.chat - INFO - Calendar result: None
+2025-04-19 12:39:40,206 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com.
+2025-04-19 12:39:40,206 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'natnaelmulugeta1738@gmail.com'}, {'role': 'assistant', 'content': "I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com."}]
+2025-04-19 12:40:33,466 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:40:34,314 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:40:34,314 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:40:34,315 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:40:34,315 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:40:34,315 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:40:44,125 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:40:44,125 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:40:44,125 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:40:44,125 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:40:44,125 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:40:44,126 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:40:44,126 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:40:44,126 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:40:44,126 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:40:44,127 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:40:44,127 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:43:50,894 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:43:50,894 - routers.chat - INFO - Stored history for session session-1: []
+2025-04-19 12:43:50,896 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:43:50,896 - routers.chat - INFO - Loading Zapier tools with API key: sk-a...
+2025-04-19 12:43:51,801 - routers.chat - INFO - Found 3 Zapier actions
+2025-04-19 12:43:51,802 - routers.chat - INFO - Added Zapier tool: Gmail: Send Email with function name: Gmail_Send_Email
+2025-04-19 12:43:51,803 - routers.chat - INFO - Added Zapier tool: Google Calendar: Create Calendar with function name: Google_Calendar_Create_Calendar
+2025-04-19 12:43:51,803 - routers.chat - INFO - Added Zapier tool: Calendly: Create One-Off Meeting with function name: Calendly_Create_One_Off_Meeting
+2025-04-19 12:43:51,804 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 12:43:51,805 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:43:51,805 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:43:51,806 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:43:51,806 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:43:51,807 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:43:51,808 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:43:51,809 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:43:51,809 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:44:08,941 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:44:08,941 - routers.chat - INFO - Stored history for session session-2: []
+2025-04-19 12:44:08,941 - routers.chat - INFO - Formatted conversation history: []
+2025-04-19 12:44:08,942 - routers.chat - INFO - Checking if should use Zapier for: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:44:08,942 - routers.chat - INFO - Calendar pattern match: 'book me an event'
+2025-04-19 12:44:08,942 - routers.chat - INFO - Calendar pattern match: 'can you book'
+2025-04-19 12:44:08,942 - routers.chat - INFO - Should use Zapier for 'can you book me an event on pediatric cardiology?'? True
+2025-04-19 12:44:08,943 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:44:08,944 - routers.chat - INFO - Processing with Zapier: 'can you book me an event on pediatric cardiology?'
+2025-04-19 12:44:08,944 - routers.chat - INFO - Zapier response: I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?
+2025-04-19 12:44:08,945 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:45:08,439 - routers.chat - INFO - Incoming history from request: [{'additionalProp1': {}}]
+2025-04-19 12:45:08,440 - routers.chat - INFO - Stored history for session session-1: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:45:08,440 - routers.chat - INFO - Formatted conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}]
+2025-04-19 12:45:08,441 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:45:08,441 - routers.chat - INFO - Should use Zapier for 'natnaelmulugeta1738@gmail.com'? False
+2025-04-19 12:45:08,442 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 12:45:08,442 - routers.chat - INFO - Previous message was asking for email address
+2025-04-19 12:45:08,443 - routers.chat - INFO - Processing with Zapier: 'natnaelmulugeta1738@gmail.com'
+2025-04-19 12:45:08,446 - routers.chat - INFO - Detected follow-up with email: natnaelmulugeta1738@gmail.com
+2025-04-19 12:45:08,449 - routers.chat - INFO - Found calendar tool: Google_Calendar_Create_Calendar
+2025-04-19 12:45:08,452 - routers.chat - INFO - Calendar query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:45:08,453 - routers.chat - INFO - Running Zapier action c494728e-49c5-41b3-9979-be52987b8aea with query: Create a calendar event on tomorrow at 10:00 am titled 'Pediatric Appointment' with attendee natnaelmulugeta1738@gmail.com
+2025-04-19 12:45:24,957 - routers.chat - INFO - Zapier action result: {'kind': 'calendar#calendar', 'etag': '"MAxiWrfGKpYf5wuN2Buhdq-QWV0"', 'id': '6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com', 'summary': 'Pediatric Appointment', 'timeZone': 'UTC', 'conferenceProperties__allowedConferenceSolutionTypes': ['hangoutsMeet'], 'url': 'https://calendar.google.com/calendar/r?cid=6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com', 'public_url': 'https://calendar.google.com/calendar/embed?src=6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com'}
+2025-04-19 12:45:24,958 - routers.chat - INFO - Calendar result: {'kind': 'calendar#calendar', 'etag': '"MAxiWrfGKpYf5wuN2Buhdq-QWV0"', 'id': '6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com', 'summary': 'Pediatric Appointment', 'timeZone': 'UTC', 'conferenceProperties__allowedConferenceSolutionTypes': ['hangoutsMeet'], 'url': 'https://calendar.google.com/calendar/r?cid=6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com', 'public_url': 'https://calendar.google.com/calendar/embed?src=6eb7a7beb79de4b5d9b4b6c4742688a19cedffc90a10bda23a1f5fa32d29712d@group.calendar.google.com'}
+2025-04-19 12:45:24,958 - routers.chat - INFO - Zapier response: I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com.
+2025-04-19 12:45:24,959 - routers.chat - INFO - Updated conversation history: [{'role': 'user', 'content': 'can you book me an event on pediatric cardiology?'}, {'role': 'assistant', 'content': "I'd be happy to book an appointment for you. Could you please provide your email address so I can send you a confirmation?"}, {'role': 'user', 'content': 'natnaelmulugeta1738@gmail.com'}, {'role': 'assistant', 'content': "I've scheduled a Pediatric Appointment for you on tomorrow at 10:00 am. A confirmation has been sent to natnaelmulugeta1738@gmail.com."}]
+2025-04-19 13:04:44,057 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:05:37,255 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:05:37,256 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:05:37,256 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:05:37,257 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:05:37,257 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:05:37,258 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:05:40,034 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 13:05:40,035 - routers.chat - ERROR - Error using Zapier tools: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 13:05:40,036 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 13:05:43,670 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:05:45,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:06:43,302 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:06:43,302 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:06:43,302 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:06:43,303 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:06:43,303 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:06:43,303 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:06:43,306 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:06:46,162 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 13:06:46,164 - routers.chat - ERROR - Error using Zapier tools: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 13:06:46,166 - routers.chat - WARNING - Zapier processing failed, falling back to knowledge base: Failed to process with Zapier: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 13:06:49,564 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:06:51,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:08:38,131 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:08:38,132 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:08:38,132 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:08:38,132 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:08:38,132 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:08:38,132 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:08:38,133 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:08:38,133 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:08:38,133 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:08:38,134 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:08:41,318 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:08:41,331 - routers.chat - INFO - Running Zapier action 7bafd607-8de7-489d-8e8c-1247d28fbb86 with query: summary of the document
+2025-04-19 13:08:45,405 - routers.chat - INFO - Zapier action result: None
+2025-04-19 13:08:46,700 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:08:46,702 - routers.chat - INFO - Zapier response: I have sent an email containing the summary of the document.
+2025-04-19 13:14:23,211 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:14:23,212 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:14:23,213 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:14:23,214 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:14:36,194 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:14:36,194 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:14:36,195 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:14:36,196 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:14:36,197 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:14:36,198 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:14:37,894 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of  the summary of the document'
+
+Available information I've detected:
+- Email addresses: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it specifically.
+
+2025-04-19 13:14:40,606 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:14:40,636 - routers.chat - INFO - Zapier agent response: It seems like I need to send an email containing the summary of a document. However, I don't have the email address where I should send this, the content of the summary, or the subject of the email. Could you please provide these details?
+2025-04-19 13:14:40,637 - routers.chat - INFO - Zapier response: It seems like I need to send an email containing the summary of a document. However, I don't have the email address where I should send this, the content of the summary, or the subject of the email. Could you please provide these details?
+2025-04-19 13:17:29,644 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:17:29,645 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:17:29,646 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:17:29,646 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:17:38,784 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:17:38,786 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:17:38,787 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:17:38,790 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:17:38,792 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:17:38,793 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:17:40,317 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of  the summary of the document'
+
+Available information I've detected:
+- Email addresses: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:17:42,509 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:17:42,529 - routers.chat - INFO - Zapier agent response: Sure, I can help with that. But first, can you please provide me the email address where the summary of the document needs to be sent? Also, it would be beneficial if you could share the content of the summary.
+2025-04-19 13:17:42,529 - routers.chat - INFO - Zapier response: Sure, I can help with that. But first, can you please provide me the email address where the summary of the document needs to be sent? Also, it would be beneficial if you could share the content of the summary.
+2025-04-19 13:18:14,260 - routers.chat - INFO - Checking if should use Zapier for: 'my email is natnaelm553@gmail.com'
+2025-04-19 13:18:14,260 - routers.chat - INFO - Should use Zapier for 'my email is natnaelm553@gmail.com'? False
+2025-04-19 13:18:14,261 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:18:18,065 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:18:20,562 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:21:41,293 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:21:41,294 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:21:41,295 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:21:41,296 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:21:50,803 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:21:50,804 - routers.chat - ERROR - Error generating AI response: name 're' is not defined
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 352, in get_ai_response
+    should_use_zapier_result = should_use_zapier(request.user_request, conversation_history)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 90, in should_use_zapier
+    contains_email = bool(re.search(email_pattern, request_lower))
+                          ^^
+NameError: name 're' is not defined. Did you forget to import 're'?
+2025-04-19 13:22:48,039 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:22:48,039 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:22:48,040 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:22:48,040 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:22:51,871 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of  the summary of the document'
+2025-04-19 13:22:51,871 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:22:51,872 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:22:51,872 - routers.chat - INFO - Should use Zapier for 'can you send an email of  the summary of the document'? True
+2025-04-19 13:22:51,872 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:22:51,872 - routers.chat - INFO - Processing with Zapier: 'can you send an email of  the summary of the document'
+2025-04-19 13:22:53,627 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of  the summary of the document'
+
+Available information I've detected:
+- Email addresses: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:22:57,081 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:22:57,095 - routers.chat - INFO - Zapier agent response: It seems like you want to send an email containing the summary of a document. To help you with this, I'd need a few more details:
+
+1. The email address of the recipient.
+2. The subject of the email you want to send.
+3. The summary of the document.
+
+Could you please provide this information?
+2025-04-19 13:22:57,096 - routers.chat - INFO - Zapier response: It seems like you want to send an email containing the summary of a document. To help you with this, I'd need a few more details:
+
+1. The email address of the recipient.
+2. The subject of the email you want to send.
+3. The summary of the document.
+
+Could you please provide this information?
+2025-04-19 13:23:49,566 - routers.chat - INFO - Checking if should use Zapier for: 'the email address is natnaelm553@gmail.com and the content is the summary og the document'
+2025-04-19 13:23:49,567 - routers.chat - INFO - Should use Zapier for 'The email address is natnaelm553@gmail.com and the content is the summary og the document'? True
+2025-04-19 13:23:49,567 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:23:49,568 - routers.chat - INFO - Processing with Zapier: 'The email address is natnaelm553@gmail.com and the content is the summary og the document'
+2025-04-19 13:23:51,227 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'The email address is natnaelm553@gmail.com and the content is the summary og the document'
+
+Available information I've detected:
+- Email addresses: natnaelm553@gmail.com
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:23:53,964 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:23:53,969 - routers.chat - INFO - Zapier agent response: To assist you appropriately, could you please provide more details on the task? Specifically, I need to know the following:
+
+1. What is the subject of the email?
+2. What is the content of the summary for the document that needs to be sent? 
+
+Once I have this information, I can help create and send the email.
+2025-04-19 13:23:53,969 - routers.chat - INFO - Zapier response: To assist you appropriately, could you please provide more details on the task? Specifically, I need to know the following:
+
+1. What is the subject of the email?
+2. What is the content of the summary for the document that needs to be sent? 
+
+Once I have this information, I can help create and send the email.
+2025-04-19 13:24:23,414 - routers.chat - INFO - Checking if should use Zapier for: 'the email address is natnaelm553@gmail.com and the content is the summary og the document.the subject if fd'
+2025-04-19 13:24:23,415 - routers.chat - INFO - Should use Zapier for 'The email address is natnaelm553@gmail.com and the content is the summary og the document.the subject if fd'? True
+2025-04-19 13:24:23,415 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:24:23,416 - routers.chat - INFO - Processing with Zapier: 'The email address is natnaelm553@gmail.com and the content is the summary og the document.the subject if fd'
+2025-04-19 13:24:25,095 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'The email address is natnaelm553@gmail.com and the content is the summary og the document.the subject if fd'
+
+Available information I've detected:
+- Email addresses: natnaelm553@gmail.com
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:24:28,420 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:24:28,425 - routers.chat - INFO - Zapier agent response: It appears that you would like to send an email to natnaelm553@gmail.com with a subject line of "fd" and the content is the summary of a document. However, I don't have the summary of the document you'd like to send. Could you please provide the summary so I can process your request?
+2025-04-19 13:24:28,426 - routers.chat - INFO - Zapier response: It appears that you would like to send an email to natnaelm553@gmail.com with a subject line of "fd" and the content is the summary of a document. However, I don't have the summary of the document you'd like to send. Could you please provide the summary so I can process your request?
+2025-04-19 13:25:00,002 - routers.chat - INFO - Checking if should use Zapier for: 'the email address is natnaelm553@gmail.com and the content is the summary of the rates.the subject if fd'
+2025-04-19 13:25:00,002 - routers.chat - INFO - Should use Zapier for 'The email address is natnaelm553@gmail.com and the content is the summary of the rates.the subject if fd'? True
+2025-04-19 13:25:00,003 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:25:00,003 - routers.chat - INFO - Processing with Zapier: 'The email address is natnaelm553@gmail.com and the content is the summary of the rates.the subject if fd'
+2025-04-19 13:25:01,675 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'The email address is natnaelm553@gmail.com and the content is the summary of the rates.the subject if fd'
+
+Available information I've detected:
+- Email addresses: natnaelm553@gmail.com
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:25:05,577 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:25:05,581 - routers.chat - INFO - Zapier agent response: It seems like you want to send an email to natnaelm553@gmail.com with the subject "fd" and content as "summary of the rates". However, I need some clarification before proceeding:
+
+1. What do you mean by "summary of the rates"? Do you have any specific details or information that should be included in this summary?
+
+2. The subject "fd" is quite brief. Is this the correct and complete subject of the email?
+
+Could you please provide additional details? This will help me in automating the process accurately.
+2025-04-19 13:25:05,582 - routers.chat - INFO - Zapier response: It seems like you want to send an email to natnaelm553@gmail.com with the subject "fd" and content as "summary of the rates". However, I need some clarification before proceeding:
+
+1. What do you mean by "summary of the rates"? Do you have any specific details or information that should be included in this summary?
+
+2. The subject "fd" is quite brief. Is this the correct and complete subject of the email?
+
+Could you please provide additional details? This will help me in automating the process accurately.
+2025-04-19 13:29:12,539 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:29:12,541 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:29:12,541 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:29:12,542 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:29:12,543 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email about the summary of the document'
+2025-04-19 13:29:12,544 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:29:12,545 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:29:12,545 - routers.chat - INFO - Email pattern match: 'email about'
+2025-04-19 13:29:12,545 - routers.chat - INFO - Should use Zapier for 'can you send an email about the summary of the document'? True
+2025-04-19 13:29:12,546 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:29:12,546 - routers.chat - INFO - Processing with Zapier: 'can you send an email about the summary of the document'
+2025-04-19 13:29:12,546 - routers.chat - INFO - Attempting to retrieve relevant knowledge for the summary/document request
+2025-04-19 13:29:16,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:29:18,571 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email about the summary of the document'
+
+Available information I've detected:
+- Email addresses: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:29:22,082 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:29:22,092 - routers.chat - INFO - Zapier agent response: I'd be happy to help you send an email about the document summary. However, I need a few more details from you:
+
+1. The email address of the recipient
+2. The content of the summary that you want to include in the email
+3. The subject line for the email
+
+Could you please provide these details?
+2025-04-19 13:29:22,093 - routers.chat - INFO - Zapier response: I'd be happy to help you send an email about the document summary. However, I need a few more details from you:
+
+1. The email address of the recipient
+2. The content of the summary that you want to include in the email
+3. The subject line for the email
+
+Could you please provide these details?
+2025-04-19 13:30:30,278 - routers.chat - INFO - Checking if should use Zapier for: 'the email is natnaelm553@gmail.com the content is the summary of the rates . the subject is fd'
+2025-04-19 13:30:30,279 - routers.chat - INFO - Should use Zapier for 'the email is natnaelm553@gmail.com the content is the summary of the rates . the subject is fd'? False
+2025-04-19 13:30:30,279 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:30:33,393 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:30:41,273 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:33:54,297 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:33:54,298 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:33:54,298 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:33:54,299 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:34:33,224 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of the summary of the fd '
+2025-04-19 13:34:33,225 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:34:33,226 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:34:33,226 - routers.chat - INFO - Should use Zapier for 'can you send an email of the summary of the fd '? True
+2025-04-19 13:34:33,227 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:34:33,227 - routers.chat - INFO - Processing with Zapier: 'can you send an email of the summary of the fd '
+2025-04-19 13:34:33,229 - routers.chat - INFO - Extracted email: []
+2025-04-19 13:34:33,229 - routers.chat - INFO - Extracted subject: 
+2025-04-19 13:34:33,230 - routers.chat - INFO - Extracted content: 
+2025-04-19 13:34:33,230 - routers.chat - INFO - Attempting to retrieve relevant knowledge for the summary/document request
+2025-04-19 13:34:36,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:34:38,217 - routers.chat - INFO - Found relevant knowledge content: From bankBot:
+ABC Bank - Your Trusted Financial Partner
+Secure Your Future with ABC Bank
+Fixed Depos...
+2025-04-19 13:34:39,825 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of the summary of the fd '
+
+Available information I've detected:
+- Email addresses: None detected
+
+Relevant information from knowledge base that should be used as the content of any summary or document:
+From bankBot:
+ABC Bank - Your Trusted Financial Partner
+Secure Your Future with ABC Bank
+Fixed Deposits (FD)
+Features:
+- Guaranteed returns with attractive interest rates
+- Flexible tenure options from 7 days to 10 years
+- Senior citizen benefits with additional interest rates
+- Auto-renewal facility available
+Interest Rates:
+- 7 days - 6 months: 5.00% p.a.
+- 6 months - 1 year: 6.25% p.a.
+- 1 year - 5 years: 7.00% p.a.
+- 5 years - 10 years: 7.50% p.a.
+Recurring Deposits (RD)
+Features:
+- Monthly investments with interest compounding
+- Tenure ranging from 6 months to 10 years
+- Premature withdrawal option available
+- Loan against RD facility
+Interest Rates:
+- 6 months - 1 year: 5.75% p.a.
+- 1 year - 3 years: 6.50% p.a.
+- 3 years - 5 years: 7.00% p.a.
+- 5 years - 10 years: 7.25% p.a.
+Loan Services
+Home Loan
+- Interest Rate: Starting at 8.25% p.a.
+- Loan Tenure: Up to 30 years
+- Features:
+  - Low EMI with flexible repayment options
+  - Quick processing and minimal documentation
+
+From bankBot:
+Loan Services
+Home Loan
+- Interest Rate: Starting at 8.25% p.a.
+- Loan Tenure: Up to 30 years
+- Features:
+  - Low EMI with flexible repayment options
+  - Quick processing and minimal documentation
+  - Balance transfer facility available
+Personal Loan
+- Interest Rate: Starting at 10.75% p.a.
+- Loan Amount: Up to INR 20 Lakhs
+- Features:
+  - No collateral required
+  - Fast approval with minimal paperwork
+  - Flexible repayment tenure
+Car Loan
+- Interest Rate: Starting at 9.50% p.a.
+- Loan Tenure: Up to 7 years
+- Features:
+  - 100% financing on selected models
+  - Quick approval process
+  - Attractive EMI options
+Why Choose ABC Bank?
+- Trusted by millions of customers
+- 24/7 customer support
+- Hassle-free online banking
+- Special benefits for senior citizens
+Visit your nearest ABC Bank branch or apply online today!
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:34:41,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:34:41,625 - routers.chat - INFO - Zapier agent response: To fulfill this request, I need the recipient's email address. Could you please provide the email address to which the summary should be sent?
+2025-04-19 13:34:41,626 - routers.chat - INFO - Zapier response: To fulfill this request, I need the recipient's email address. Could you please provide the email address to which the summary should be sent?
+2025-04-19 13:35:19,228 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelm553@gmail.com '
+2025-04-19 13:35:19,229 - routers.chat - INFO - Should use Zapier for 'natnaelm553@gmail.com '? False
+2025-04-19 13:35:19,229 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:35:22,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:35:24,977 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:39:39,211 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:39:39,211 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:39:39,212 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:39:39,212 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:39:39,212 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of the summary of the fd '
+2025-04-19 13:39:39,212 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:39:39,213 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:39:39,213 - routers.chat - INFO - Should use Zapier for 'can you send an email of the summary of the fd '? True
+2025-04-19 13:39:39,215 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:39:39,216 - routers.chat - INFO - Processing with Zapier: 'can you send an email of the summary of the fd '
+2025-04-19 13:39:39,217 - routers.chat - INFO - Extracted email: []
+2025-04-19 13:39:39,217 - routers.chat - INFO - Extracted subject: 
+2025-04-19 13:39:39,217 - routers.chat - INFO - Extracted content: 
+2025-04-19 13:39:39,218 - routers.chat - INFO - Attempting to retrieve relevant knowledge for the summary/document request
+2025-04-19 13:39:43,903 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:39:45,667 - routers.chat - INFO - Found relevant knowledge content: From bankBot:
+ABC Bank - Your Trusted Financial Partner
+Secure Your Future with ABC Bank
+Fixed Depos...
+2025-04-19 13:39:47,223 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of the summary of the fd '
+
+Available information I've detected:
+- Email addresses: None detected
+
+Relevant information from knowledge base that should be used as the content of any summary or document:
+From bankBot:
+ABC Bank - Your Trusted Financial Partner
+Secure Your Future with ABC Bank
+Fixed Deposits (FD)
+Features:
+- Guaranteed returns with attractive interest rates
+- Flexible tenure options from 7 days to 10 years
+- Senior citizen benefits with additional interest rates
+- Auto-renewal facility available
+Interest Rates:
+- 7 days - 6 months: 5.00% p.a.
+- 6 months - 1 year: 6.25% p.a.
+- 1 year - 5 years: 7.00% p.a.
+- 5 years - 10 years: 7.50% p.a.
+Recurring Deposits (RD)
+Features:
+- Monthly investments with interest compounding
+- Tenure ranging from 6 months to 10 years
+- Premature withdrawal option available
+- Loan against RD facility
+Interest Rates:
+- 6 months - 1 year: 5.75% p.a.
+- 1 year - 3 years: 6.50% p.a.
+- 3 years - 5 years: 7.00% p.a.
+- 5 years - 10 years: 7.25% p.a.
+Loan Services
+Home Loan
+- Interest Rate: Starting at 8.25% p.a.
+- Loan Tenure: Up to 30 years
+- Features:
+  - Low EMI with flexible repayment options
+  - Quick processing and minimal documentation
+
+From bankBot:
+Loan Services
+Home Loan
+- Interest Rate: Starting at 8.25% p.a.
+- Loan Tenure: Up to 30 years
+- Features:
+  - Low EMI with flexible repayment options
+  - Quick processing and minimal documentation
+  - Balance transfer facility available
+Personal Loan
+- Interest Rate: Starting at 10.75% p.a.
+- Loan Amount: Up to INR 20 Lakhs
+- Features:
+  - No collateral required
+  - Fast approval with minimal paperwork
+  - Flexible repayment tenure
+Car Loan
+- Interest Rate: Starting at 9.50% p.a.
+- Loan Tenure: Up to 7 years
+- Features:
+  - 100% financing on selected models
+  - Quick approval process
+  - Attractive EMI options
+Why Choose ABC Bank?
+- Trusted by millions of customers
+- 24/7 customer support
+- Hassle-free online banking
+- Special benefits for senior citizens
+Visit your nearest ABC Bank branch or apply online today!
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+
+2025-04-19 13:39:49,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:39:49,065 - routers.chat - INFO - Zapier agent response: To proceed with the task, I need the recipient's email address to send the summary of the fixed deposit. Could you please provide me with the email address?
+2025-04-19 13:39:49,066 - routers.chat - INFO - Zapier response: To proceed with the task, I need the recipient's email address to send the summary of the fixed deposit. Could you please provide me with the email address?
+2025-04-19 13:40:00,193 - routers.chat - INFO - Checking if should use Zapier for: 'natnaelm553@gmail.com '
+2025-04-19 13:40:00,194 - routers.chat - INFO - Should use Zapier for 'natnaelm553@gmail.com '? False
+2025-04-19 13:40:00,194 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:40:03,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:40:05,316 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:50:01,430 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:50:01,430 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:50:01,431 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:50:01,431 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:50:08,370 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of the summary of the fd '
+2025-04-19 13:50:08,371 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:50:08,371 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:50:08,372 - routers.chat - INFO - Should use Zapier for 'can you send an email of the summary of the fd '? True
+2025-04-19 13:50:08,372 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:50:08,373 - routers.chat - INFO - Processing with Zapier: 'can you send an email of the summary of the fd '
+2025-04-19 13:50:08,375 - routers.chat - INFO - Extracted email: []
+2025-04-19 13:50:08,376 - routers.chat - INFO - Extracted subject: 
+2025-04-19 13:50:08,377 - routers.chat - INFO - Extracted content: 
+2025-04-19 13:50:09,985 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of the summary of the fd '
+
+Available information I've detected:
+- Email addresses: None detected
+- Subject: None detected
+- Content: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+DO NOT end the conversation without collecting all necessary information.
+
+2025-04-19 13:50:12,741 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:50:12,772 - routers.chat - INFO - Zapier agent response: Sure, I can help you with that. However, I need more information to proceed. Could you please provide the following details?
+
+1. The email address where the summary should be sent.
+2. The subject of the email.
+3. The content of the summary for the FD.
+2025-04-19 13:50:12,772 - routers.chat - INFO - Zapier response: Sure, I can help you with that. However, I need more information to proceed. Could you please provide the following details?
+
+1. The email address where the summary should be sent.
+2. The subject of the email.
+3. The content of the summary for the FD.
+2025-04-19 13:50:56,036 - routers.chat - INFO - Checking if should use Zapier for: 'the email is natnaelm553@gmail.com and the subject is fd summary'
+2025-04-19 13:50:56,037 - routers.chat - INFO - Should use Zapier for 'the email is natnaelm553@gmail.com and the subject is fd summary'? False
+2025-04-19 13:50:56,038 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:50:59,977 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:51:03,938 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:54:15,773 - routers.chat - INFO - Creating Zapier tool: Google Calendar: Quick Add Event with valid name: Google_Calendar_Quick_Add_Event
+2025-04-19 13:54:15,774 - routers.chat - INFO - Creating Zapier tool: Gmail: Send Email with valid name: Gmail_Send_Email
+2025-04-19 13:54:15,774 - routers.chat - INFO - Creating Zapier tool: Calendly: Create One-Off Meeting with valid name: Calendly_Create_One_Off_Meeting
+2025-04-19 13:54:15,775 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 13:54:27,278 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of the summary of the fd '
+2025-04-19 13:54:27,279 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:54:27,279 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:54:27,280 - routers.chat - INFO - Should use Zapier for 'can you send an email of the summary of the fd '? True
+2025-04-19 13:54:27,280 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:54:27,280 - routers.chat - INFO - Processing with Zapier: 'can you send an email of the summary of the fd '
+2025-04-19 13:54:27,281 - routers.chat - INFO - Extracted email: []
+2025-04-19 13:54:27,281 - routers.chat - INFO - Extracted subject: 
+2025-04-19 13:54:27,281 - routers.chat - INFO - Extracted content: 
+2025-04-19 13:54:28,809 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of the summary of the fd '
+
+Available information I've detected:
+- Email addresses: None detected
+- Subject: None detected
+- Content: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+DO NOT end the conversation without collecting all necessary information.
+
+2025-04-19 13:54:32,541 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:54:32,555 - routers.chat - INFO - Zapier agent response: Of course, I'd be happy to assist you with this. However, I need a bit more information. Could you please provide the following details:
+
+1. The email address where the summary should be sent.
+2. The subject for the email.
+3. The content for the email, specifically what details should be included in the summary of the FD. 
+
+Once I have this information, I'll be able to send the email for you.
+2025-04-19 13:54:32,556 - routers.chat - INFO - Zapier response: Of course, I'd be happy to assist you with this. However, I need a bit more information. Could you please provide the following details:
+
+1. The email address where the summary should be sent.
+2. The subject for the email.
+3. The content for the email, specifically what details should be included in the summary of the FD. 
+
+Once I have this information, I'll be able to send the email for you.
+2025-04-19 13:54:51,984 - routers.chat - INFO - Checking if should use Zapier for: 'the email is natnaelm553@gmail.com and the subject is fd summary'
+2025-04-19 13:54:51,985 - routers.chat - INFO - Should use Zapier for 'the email is natnaelm553@gmail.com and the subject is fd summary'? False
+2025-04-19 13:54:51,988 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:54:55,304 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 13:55:02,501 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:55:41,216 - routers.chat - INFO - Checking if should use Zapier for: 'can you send an email of the summary of the fd to natnaelm553@gmail.com'
+2025-04-19 13:55:41,216 - routers.chat - INFO - Email pattern match: 'can you send an email'
+2025-04-19 13:55:41,217 - routers.chat - INFO - Email pattern match: 'send an email'
+2025-04-19 13:55:41,217 - routers.chat - INFO - Should use Zapier for 'can you send an email of the summary of the fd to natnaelm553@gmail.com'? True
+2025-04-19 13:55:41,217 - routers.chat - INFO - Zapier tools available: 3
+2025-04-19 13:55:41,218 - routers.chat - INFO - Processing with Zapier: 'can you send an email of the summary of the fd to natnaelm553@gmail.com'
+2025-04-19 13:55:41,218 - routers.chat - INFO - Extracted email: ['natnaelm553@gmail.com']
+2025-04-19 13:55:41,219 - routers.chat - INFO - Extracted subject: 
+2025-04-19 13:55:41,219 - routers.chat - INFO - Extracted content: 
+2025-04-19 13:55:42,833 - routers.chat - INFO - Running Zapier agent with prompt: Based on this request: 'can you send an email of the summary of the fd to natnaelm553@gmail.com'
+
+Available information I've detected:
+- Email addresses: natnaelm553@gmail.com
+- Subject: None detected
+- Content: None detected
+
+Please determine what Zapier automation is needed and execute it if you have all required information.
+If information is missing, ask for it in a friendly, conversational way as if you're chatting with a colleague.
+DO NOT end the conversation without collecting all necessary information.
+
+2025-04-19 13:55:45,929 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 13:55:45,932 - routers.chat - INFO - Zapier agent response: Sure, I can help with that. However, I need to know the content of the summary of the fd that should be included in the email. Could you please provide me with that information?
+2025-04-19 13:55:45,933 - routers.chat - INFO - Zapier response: Sure, I can help with that. However, I need to know the content of the summary of the fd that should be included in the email. Could you please provide me with that information?
+2025-04-19 14:00:27,129 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 14:01:07,691 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 20:24:31,512 - routers.chat - ERROR - Error loading Zapier tools: 'ZapierNLAWrapper' object has no attribute 'get_action_details'
+2025-04-19 20:26:12,539 - routers.chat - ERROR - Error loading Zapier tools: 'str' object has no attribute 'get'
+2025-04-19 20:27:15,080 - routers.chat - ERROR - Error loading Zapier tools: 'str' object has no attribute 'get'
+2025-04-19 20:27:35,700 - routers.chat - ERROR - Error loading Zapier tools: 'ZapierNLAWrapper' object has no attribute 'get_action'
+2025-04-19 20:35:25,007 - routers.chat - WARNING - Failed to load action 61adc166-92b2-4879-ad82-8e4fc34641bf: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/61adc166-92b2-4879-ad82-8e4fc34641bf/
+2025-04-19 20:35:25,688 - routers.chat - WARNING - Failed to load action 7bafd607-8de7-489d-8e8c-1247d28fbb86: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/7bafd607-8de7-489d-8e8c-1247d28fbb86/
+2025-04-19 20:35:26,390 - routers.chat - WARNING - Failed to load action edbe46fc-a768-44e9-b7fc-f7f0a25f36ca: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/edbe46fc-a768-44e9-b7fc-f7f0a25f36ca/
+2025-04-19 20:35:26,391 - routers.chat - INFO - Loaded 0 Zapier tools
+2025-04-19 20:40:14,320 - routers.chat - INFO - Loaded 3 basic Zapier tools
+2025-04-19 20:49:59,432 - routers.chat - INFO - Loaded 3 basic Zapier tools
+2025-04-19 20:51:42,136 - routers.chat - INFO - Loaded 3 basic Zapier tools
+2025-04-19 20:52:20,016 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 20:52:58,004 - routers.chat - ERROR - Error loading Zapier tools: 'ZapierNLAWrapper' object has no attribute 'get_action'
+2025-04-19 20:54:35,792 - routers.chat - WARNING - Failed to load action 61adc166-92b2-4879-ad82-8e4fc34641bf: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/61adc166-92b2-4879-ad82-8e4fc34641bf/
+2025-04-19 20:54:36,715 - routers.chat - WARNING - Failed to load action 7bafd607-8de7-489d-8e8c-1247d28fbb86: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/7bafd607-8de7-489d-8e8c-1247d28fbb86/
+2025-04-19 20:54:37,406 - routers.chat - WARNING - Failed to load action edbe46fc-a768-44e9-b7fc-f7f0a25f36ca: 404 Client Error: Not Found for url: https://nla.zapier.com/api/v1/exposed/edbe46fc-a768-44e9-b7fc-f7f0a25f36ca/
+2025-04-19 20:54:37,407 - routers.chat - INFO - Loaded 0 Zapier tools
+2025-04-19 20:55:38,125 - routers.chat - INFO - Loaded 3 basic Zapier tools
+2025-04-19 20:59:16,756 - routers.chat - INFO - Loaded 3 basic Zapier tools
+2025-04-19 20:59:31,228 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 20:59:31,231 - routers.chat - ERROR - Zapier processing error: Error code: 400 - {'error': {'message': "Invalid 'functions[0].name': string does not match pattern. Expected a string that matches the pattern '^[a-zA-Z0-9_-]+$'.", 'type': 'invalid_request_error', 'param': 'functions[0].name', 'code': 'invalid_value'}}
+2025-04-19 20:59:36,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 20:59:37,348 - routers.chat - ERROR - Error: 'role'
+2025-04-19 21:01:04,915 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:01:13,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 21:01:16,906 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:01:50,281 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-19 21:01:54,607 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:07:29,844 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:07:41,227 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:07:41,626 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-19 21:07:41,629 - routers.chat - ERROR - Parameter extraction failed: Error code: 400 - {'error': {'message': "Invalid parameter: 'response_format' of type 'json_object' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'response_format', 'code': None}}
+2025-04-19 21:07:44,593 - routers.chat - ERROR - Error generating response: 1 validation error for ChatResponse
+response
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-04-19 21:11:20,864 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:11:23,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:11:23,937 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:12:14,217 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:12:17,798 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:12:24,448 - routers.chat - ERROR - Error generating response: 1 validation error for ChatResponse
+response
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-04-19 21:17:42,607 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:17:45,076 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:17:47,317 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:18:08,103 - routers.chat - ERROR - Error generating response: 1 validation error for ChatResponse
+response
+  Input should be a valid string [type=string_type, input_value={'kind': 'calendar#event'..., 'attendee_emails': ''}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-04-19 21:22:27,552 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:22:30,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:22:33,879 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:22:52,281 - routers.chat - INFO - Successfully loaded 3 Zapier tools
+2025-04-19 21:22:55,042 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:23:00,540 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:25:21,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:25:23,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:27:18,522 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:27:21,586 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:27:44,836 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:27:48,028 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:28:15,856 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 21:28:18,004 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

@@ -12,17 +12,14 @@ logger = logging.getLogger(__name__)
 async def process_embeddings(knowledge_id: int, content: str, db: Session):
     """Process document content and generate embeddings."""
     try:
-        # Get the knowledge entry
         knowledge = db.query(CustomKnowledge).filter(CustomKnowledge.id == knowledge_id).first()
         if not knowledge:
             logger.error(f"Knowledge entry {knowledge_id} not found")
             return
         
-        # Update status to processing
         knowledge.embedding_status = "processing"
         db.commit()
         
-        # Use LangChain's text splitter for better chunking
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
             chunk_overlap=200,
@@ -31,13 +28,10 @@ async def process_embeddings(knowledge_id: int, content: str, db: Session):
         )
         chunks = text_splitter.split_text(content)
         
-        # Initialize OpenAI embeddings from LangChain
         embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
         
-        # Generate embeddings for each chunk
         for i, chunk in enumerate(chunks):
             try:
-                # Generate embedding using LangChain
                 embedding_vector = embeddings.embed_query(chunk)
                 
                 # Create KnowledgeVector entry
@@ -52,14 +46,12 @@ async def process_embeddings(knowledge_id: int, content: str, db: Session):
                 
                 db.add(vector)
                 
-                # Commit after each chunk to avoid large transactions
                 if i % 5 == 0:  # Commit every 5 chunks
                     db.commit()
                     logger.info(f"Processed {i+1}/{len(chunks)} chunks for knowledge {knowledge_id}")
                     
             except Exception as e:
                 logger.error(f"Error processing chunk {i} for knowledge {knowledge_id}: {str(e)}", exc_info=True)
-                # Continue with next chunk instead of failing the entire process
         
         # Final commit for any remaining chunks
         db.commit()
@@ -73,7 +65,6 @@ async def process_embeddings(knowledge_id: int, content: str, db: Session):
         logger.info(f"Embeddings generated for knowledge {knowledge_id}")
     except Exception as e:
         logger.error(f"Error processing embeddings for knowledge {knowledge_id}: {str(e)}", exc_info=True)
-        # Update knowledge status to failed
         try:
             knowledge.embedding_status = "failed"
             knowledge.updated_at = datetime.utcnow()

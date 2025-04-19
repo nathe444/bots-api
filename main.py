@@ -4,21 +4,16 @@ import os
 import openai
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
-# Set OpenAI API key
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Import database and models
 from database import engine
 from models import Base
 
-# Import routers
 from routers.documents import router as documents_router
 from routers.chat import router as chat_router
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     handlers=[logging.FileHandler("app.log"), logging.StreamHandler()])

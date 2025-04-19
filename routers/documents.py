@@ -41,17 +41,13 @@ async def upload_document(
         # Save the uploaded file
         file_path, unique_filename = save_uploaded_file(file, UPLOAD_DIR)
         
-        # Get file size
         file_size = os.path.getsize(file_path)
         
-        # Extract content based on file type
         content, file_type = extract_content(file_path, file.content_type)
         
-        # Use the filename as title if not provided
         if not title:
             title = os.path.splitext(file.filename)[0]
         
-        # Create a new CustomKnowledge entry
         knowledge = CustomKnowledge(
             bot_id=bot_id,
             title=title,
@@ -70,10 +66,8 @@ async def upload_document(
         db.commit()
         db.refresh(knowledge)
         
-        # Process the document for embeddings and wait for it to complete
         await process_embeddings(knowledge.id, content, db)
         
-        # Refresh the knowledge object to get the updated status
         db.refresh(knowledge)
         
         return {

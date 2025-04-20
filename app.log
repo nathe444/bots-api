@@ -248,3 +248,331 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2025-04-14 21:06:03,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-14 21:06:27,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
 2025-04-14 21:06:39,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-20 16:24:53,468 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:24:56,423 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-20 16:24:59,856 - routers.chat - ERROR - Error generating AI response: 'OpenAI' object has no attribute 'chat'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 136, in get_ai_response
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\pydantic\main.py", line 994, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'OpenAI' object has no attribute 'chat'
+2025-04-20 16:27:31,027 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:27:34,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-20 16:27:39,439 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:28:12,237 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:28:12,239 - routers.chat - ERROR - Error generating AI response: Need to determine which default deprecation schedule to use. within ?? minor releases
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 69, in get_ai_response
+    toolkit.get_tools(),
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_community\agent_toolkits\zapier\toolkit.py", line 72, in get_tools
+    warn_deprecated(
+    ~~~~~~~~~~~~~~~^
+        since="0.0.319",
+        ^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        ),
+        ^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 468, in warn_deprecated
+    raise NotImplementedError(msg)
+NotImplementedError: Need to determine which default deprecation schedule to use. within ?? minor releases
+2025-04-20 16:31:07,994 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:31:09,303 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:31:09,310 - routers.chat - ERROR - Error generating AI response: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 81, in get_ai_response
+    agent_response = agent.run(request.user_request)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 606, in run
+    return self(args[0], callbacks=callbacks, tags=tags, metadata=metadata)[
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 389, in __call__
+    return self.invoke(
+           ~~~~~~~~~~~^
+        inputs,
+        ^^^^^^^
+    ...<2 lines>...
+        include_run_info=include_run_info,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+        name_to_tool_map,
+    ...<3 lines>...
+        run_manager=run_manager,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1332, in _take_next_step
+    for a in self._iter_next_step(
+             ~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map,
+        ^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        run_manager,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map, color_mapping, agent_action, run_manager
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+        agent_action.tool_input,
+    ...<3 lines>...
+        **tool_run_kwargs,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 775, in run
+    raise error_to_raise
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 744, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\simple.py", line 105, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+2025-04-20 16:34:23,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:34:24,422 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:34:24,424 - routers.chat - ERROR - Error generating AI response: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 80, in get_ai_response
+    agent_response = agent.run(request.user_request)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 606, in run
+    return self(args[0], callbacks=callbacks, tags=tags, metadata=metadata)[
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 389, in __call__
+    return self.invoke(
+           ~~~~~~~~~~~^
+        inputs,
+        ^^^^^^^
+    ...<2 lines>...
+        include_run_info=include_run_info,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+        name_to_tool_map,
+    ...<3 lines>...
+        run_manager=run_manager,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1332, in _take_next_step
+    for a in self._iter_next_step(
+             ~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map,
+        ^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        run_manager,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map, color_mapping, agent_action, run_manager
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+        agent_action.tool_input,
+    ...<3 lines>...
+        **tool_run_kwargs,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 775, in run
+    raise error_to_raise
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 744, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\simple.py", line 105, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 72, in <lambda>
+    func=lambda instructions: zapier.run(instructions)
+                              ~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+2025-04-20 16:34:52,369 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:34:53,232 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:34:53,233 - routers.chat - ERROR - Error generating AI response: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 80, in get_ai_response
+    agent_response = agent.run(request.user_request)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 606, in run
+    return self(args[0], callbacks=callbacks, tags=tags, metadata=metadata)[
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 188, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 389, in __call__
+    return self.invoke(
+           ~~~~~~~~~~~^
+        inputs,
+        ^^^^^^^
+    ...<2 lines>...
+        include_run_info=include_run_info,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 170, in invoke
+    raise e
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\chains\base.py", line 160, in invoke
+    self._call(inputs, run_manager=run_manager)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1624, in _call
+    next_step_output = self._take_next_step(
+        name_to_tool_map,
+    ...<3 lines>...
+        run_manager=run_manager,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1332, in _take_next_step
+    for a in self._iter_next_step(
+             ~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map,
+        ^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        run_manager,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1415, in _iter_next_step
+    yield self._perform_agent_action(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name_to_tool_map, color_mapping, agent_action, run_manager
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain\agents\agent.py", line 1437, in _perform_agent_action
+    observation = tool.run(
+        agent_action.tool_input,
+    ...<3 lines>...
+        **tool_run_kwargs,
+    )
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 775, in run
+    raise error_to_raise
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\base.py", line 744, in run
+    response = context.run(self._run, *tool_args, **tool_kwargs)
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\venv\Lib\site-packages\langchain_core\tools\simple.py", line 105, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 72, in <lambda>
+    func=lambda instructions: zapier.run(instructions)
+                              ~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: ZapierNLAWrapper.run() missing 1 required positional argument: 'instructions'
+2025-04-20 16:37:47,365 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:37:48,316 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:37:50,019 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:10,188 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:11,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:12,326 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:20,521 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:30,559 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:38:41,501 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:39:50,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:39:53,201 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-20 16:39:57,942 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:10,627 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:12,133 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:17,611 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:21,509 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:29,167 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:46,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:51,873 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:40:56,491 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:02,009 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:21,694 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:23,711 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:25,183 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:26,486 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:28,167 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:29,660 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:30,993 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:32,343 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:34,678 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:41:35,981 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:15,338 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:16,923 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:18,297 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:20,091 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:22,326 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:23,960 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:25,935 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:28,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:29,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:42:30,603 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:47:18,357 - routers.chat - ERROR - Error generating AI response: Logger.log() missing 1 required positional argument: 'msg'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 65, in get_ai_response
+    logger.log(zapier_tools)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: Logger.log() missing 1 required positional argument: 'msg'
+2025-04-20 16:48:31,014 - routers.chat - ERROR - Error generating AI response: Logger.log() missing 1 required positional argument: 'msg'
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\folders\projects\Upwork\vijay\bot\routers\chat.py", line 65, in get_ai_response
+    logger.info(zapier_tools)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Logger.log() missing 1 required positional argument: 'msg'
+2025-04-20 16:48:43,149 - routers.chat - INFO - [{'id': '61adc166-92b2-4879-ad82-8e4fc34641bf', 'operation_id': 'google_calendar_quick_add_event_7560451', 'description': 'Google Calendar: Quick Add Event', 'params': {'instructions': 'str', 'Calendar': 'str', 'Describe_Event': 'str'}}, {'id': '7bafd607-8de7-489d-8e8c-1247d28fbb86', 'operation_id': 'gmail_send_email_95534e2', 'description': 'Gmail: Send Email', 'params': {'instructions': 'str', 'To': 'str', 'Subject': 'str', 'Body': 'str'}}, {'id': 'edbe46fc-a768-44e9-b7fc-f7f0a25f36ca', 'operation_id': 'calendly_create_one_off_meeting_d8d3abf', 'description': 'Calendly: Create One-Off Meeting', 'params': {'instructions': 'str', 'Event_Name': 'str', 'Host_User': 'str', 'Duration__in_minutes': 'str', 'Start_Date': 'str', 'End_Date': 'str'}}]
+2025-04-20 16:48:44,194 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:46,654 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:47,901 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:49,314 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:51,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:53,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:55,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:57,319 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:48:59,249 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:49:00,653 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:49:02,305 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:49:05,522 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:37,636 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:39,490 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:40,774 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:42,472 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:44,145 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:45,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:46,852 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:48,074 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:49,639 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:50:51,092 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:19,388 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:21,010 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:23,030 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:25,040 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:26,122 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:27,583 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:28,729 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:30,481 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:31,814 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:51:32,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:53:46,032 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:53:48,507 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-04-20 16:53:52,039 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:55:24,425 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:55:25,571 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 16:55:52,810 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 17:00:21,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 17:00:23,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-04-20 17:00:51,667 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
